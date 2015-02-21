@@ -4,6 +4,8 @@ A Yii2 LinkPager that displays the first and last pages inline with other pages.
 
 Rather than having dedicated "First" and "Last" buttons in your LinkPager, **Separated Pager** will show a standard set of page links but will also always include the first and last pages as the first and last page links. No more dedicated first/last buttons and no more guessing how many pages there are.
 
+![sample](https://cloud.githubusercontent.com/assets/2441889/6312491/6a89be10-b948-11e4-9ac8-bcd793664e1a.png)
+
 ##Installation
 
 ###Install the extension
