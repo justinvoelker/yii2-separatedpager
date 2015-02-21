@@ -1,0 +1,21 @@
+{
+    "name": "justinvoelker/yii2-ellipsispager",
+    "description": "A Yii2 LinkPager that displays the first and last pages inline with other pages.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","linkpager","pagination"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Justin Voelker",
+            "email": "justin@justinvoelker.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "justinvoelker\\ellipsispager\\": ""
+        }
+    }
+}
