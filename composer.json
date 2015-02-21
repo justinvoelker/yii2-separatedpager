@@ -1,5 +1,5 @@
 {
-    "name": "justinvoelker/yii2-ellipsispager",
+    "name": "justinvoelker/yii2-separatedpager",
     "description": "A Yii2 LinkPager that displays the first and last pages inline with other pages.",
     "type": "yii2-extension",
     "keywords": ["yii2","linkpager","pagination"],
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "justinvoelker\\ellipsispager\\": ""
+            "justinvoelker\\separatedpager\\": ""
         }
     }
 }
