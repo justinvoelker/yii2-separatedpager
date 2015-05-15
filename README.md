@@ -56,7 +56,9 @@ Here is my preferred pager setup.  A max of 7 pages, 'Previous' and 'Next' butto
         'nextPageLabel' => 'Next',
         'prevPageCssClass' => 'prev hidden-xs',
         'nextPageCssClass' => 'next hidden-xs',
+        'activeLinkable' => false,
     ]
 ```
 
 Keep in mind that setting css classes will overwrite the defaults rather than appending to them.  If additional classes should be included (such as the 'hidden-xs' above) the original `prev` and `next` should be included as well (this is the same way the standard LinkPager functions).
+You may turn off the anchor tag in active item by setting `activeLinkable` to false. That helps to avoid the situation when the page links to it self. 
