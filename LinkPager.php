@@ -28,14 +28,12 @@ class LinkPager extends \yii\widgets\LinkPager
     public $separator = '...';
 
     /**
-     * @var boolean turns on|off the <a> tag for the active pager item. It is recommended to set it to false
-     * for the sake of Search Engines Optimisation. Defaults to true.
+     * @var boolean turns on|off the <a> tag for the active page. Defaults to true (will be a link).
      */
-    public $activeLinkable = true;
+    public $activePageAsLink = true;
 
     /**
-     * Renders the page buttons.
-     * @return string the rendering result
+     * @inheritdoc
      */
     protected function renderPageButtons()
     {
@@ -117,14 +115,7 @@ class LinkPager extends \yii\widgets\LinkPager
     }
 
     /**
-     * Renders a page button.
-     * You may override this method to customize the generation of page buttons.
-     * @param string $label the text label for the button
-     * @param integer $page the page number
-     * @param string $class the CSS class for the page button.
-     * @param boolean $disabled whether this page button is disabled
-     * @param boolean $active whether this page button is active
-     * @return string the rendering result
+     * @inheritdoc
      */
     protected function renderPageButton($label, $page, $class, $disabled, $active)
     {
@@ -140,8 +131,8 @@ class LinkPager extends \yii\widgets\LinkPager
         $linkOptions = $this->linkOptions;
         $linkOptions['data-page'] = $page;
 
-        // turn off link for active item
-        if ($active && !$this->activeLinkable) {
+        // active page as anchor or span
+        if ($active && !$this->activePageAsLink) {
             return Html::tag('li', Html::tag('span', $label, $linkOptions), $options);
         }
 
