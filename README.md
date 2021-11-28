@@ -1,4 +1,4 @@
-#Separated Pager for Yii2
+# Separated Pager for Yii2
 
 A Yii2 LinkPager that displays the first and last pages inline with other pages.
 
@@ -6,9 +6,9 @@ Rather than having dedicated "First" and "Last" buttons in your LinkPager, **Sep
 
 ![sample](https://cloud.githubusercontent.com/assets/2441889/6312491/6a89be10-b948-11e4-9ac8-bcd793664e1a.png)
 
-##Installation
+## Installation
 
-###Install the extension
+### Install the extension
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
@@ -26,7 +26,7 @@ or add
 
 to the require section of your `composer.json` file.
 
-##Usage
+## Usage
 
 Simply add the `pager` property to your GridView and reference this class
 
@@ -42,7 +42,7 @@ GridView::widget([
 
 Please note that specifying less than 7 pages won't produce useful results.  Less than 7 pages of content is acceptable (will look like the standard LinkPager) but limiting the pager to something less than 7 pages will look and work poorly.  Five pages and the pager is almost worthless.  Less than 5 and it is worthless. 
 
-##Available Options
+## Available Options
 
 In addition to all of the standard [LinkPager](www.yiiframework.com/doc-2.0/yii-widgets-linkpager.html) properties, one new property has been added, `separator`, that specifies a string to be used to indicate that multiple pages are being omitted.  The default separator is `...`.
 
